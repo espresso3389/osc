@@ -21,9 +21,9 @@ class OSCMessage {
   final _builder = OSCMessageBuilder();
 
   OSCMessage(this.address, {required this.arguments}) {
-    if (!_isValid(address)) {
-      throw ArgumentError('Invalid address: $address');
-    }
+    // if (!_isValid(address)) {
+    //   throw ArgumentError('Invalid address: $address');
+    // }
 
     _builder.addAddress(address);
     _builder.addArguments(arguments);
